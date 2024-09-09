@@ -554,6 +554,8 @@ When calling torch.load on a quantized model, if you see an error like: Attribut
 
 Symbolic traceability is a requirement for (Prototype - maintenance mode) FX Graph Mode Quantization, so if you pass a PyTorch Model that is not symbolically traceable to torch.ao.quantization.prepare\_fx or torch.ao.quantization.prepare\_qat\_fx, we might see an error like the following: torch.fx.proxy.TraceError: symbolically traced variables cannot be used as inputs to control flow Please take a look at Limitations of Symbolic Tracing and use - User Guide on Using FX Graph Mode Quantization to workaround the problem.
 
+## [Practical Quantization in PyTorch](https://pytorch.org/blog/quantization-in-practice/)
+
 ## [PyTorch Numeric Suite Tutorial](https://pytorch.org/tutorials/prototype/numeric_suite_tutorial.html)
 
 ### Introduction

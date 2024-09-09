@@ -1,0 +1,228 @@
+# LLM Prompt Template
+
+## 1. Task and Context Specification
+- Task: [Clearly define the specific task or objective for the LLM]
+- Context: [Provide relevant background information to help the LLM understand the task's context and importance]
+- Constraints: [Specify any limitations, restrictions, or required elements]
+- Desired Outcome: [Clearly state what you want to achieve]
+
+## 2. Model and Prompt Configuration
+- Model Type: [Left-to-right, Masked Language Model, Encoder-Decoder]
+- Model Name: [e.g., GPT-3, BERT, T5]
+- Temperature: [0-1, where 0 is deterministic and 1 is most random]
+- Prompt Type: [Cloze Prompt (for masked prediction tasks) / Prefix Prompt (for text continuation tasks)]
+- Chosen Prompting Technique: [Specify the chosen technique(s), e.g., zero-shot, few-shot, chain-of-thought]
+  - Rationale: [Explain why this technique is appropriate for the task]
+- API Parameters:
+  - Maximum Length: [Specify]
+  - Stop Sequences: [Specify]
+  - Top P: [Specify]
+  - Frequency Penalty: [Specify]
+  - Presence Penalty: [Specify]
+  - Other Control Parameters: [Specify, e.g., creativity level]
+
+## 3. Role and Expertise Assignment
+You are an expert in [specific field or role]. Your knowledge and experience include [relevant areas of expertise].
+
+## 4. Input Format and Data
+- Input Format: [Specify the format or type of input expected]
+  - Type: [e.g., text, image, code]
+  - Structure: [e.g., JSON, CSV, plain text]
+- Input Text: [Provide the actual input text or data]
+- Variables: [Define any variables or placeholders that will be filled in when using the template]
+- Preprocessing: [Any required data cleaning or formatting]
+- Update Method: [Specify methods for introducing new, up-to-date information, if applicable]
+
+## 5. Task Instructions and Reasoning Structure
+Your task is to [describe the main objective]. Please follow these steps:
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+...
+
+For complex tasks, break it down into subtasks:
+- Subtask 1: [Description]
+- Subtask 2: [Description]
+- Subtask 3: [Description]
+
+As you work on the task, please:
+- Explain your thought process for each step
+- Show calculations or intermediate results (if applicable)
+- Justify your decisions or choices
+- Use clear and precise language
+- If you're unsure about any information, state so explicitly
+- Consider multiple perspectives on the issue
+- Integrate external knowledge when relevant [Provide instructions for knowledge integration]
+
+## 6. Prompting Techniques
+### Zero-shot Prompting
+[Provide instructions for zero-shot prompting if applicable]
+
+### One-shot Prompting
+[Provide a single example for one-shot prompting if applicable]
+
+### Few-shot Prompting
+[Provide 2-5 examples for few-shot prompting if applicable]
+
+### Chain-of-Thought Prompting
+[Provide instructions for chain-of-thought prompting if applicable]
+
+### Template Filling
+[Provide a template with placeholders for the model to complete, if applicable]
+
+## 7. Output Format and Style
+Please provide your response in the following format:
+- Format: [Specify the desired output format, e.g., list, paragraph, code snippet]
+- Structure: [Outline the expected structure of the response, if applicable]
+- Length: [Specify the desired length of the output, e.g., word count, number of points]
+- Tone and Style: [Define the desired tone of the output, e.g., professional, casual, technical]
+- Target Audience: [Specify the intended audience for the output]
+- Post-processing: [Specify any required formatting or validation of the output]
+- Answer Engineering (Verbalizer): [Specify how to map the model's output to desired classes or formats]
+
+## 8. Examples and References
+Here are some examples or references to consider:
+- [Example 1]
+- [Example 2]
+- [Relevant source or reference]
+
+[Insert relevant reference text or data here, if applicable]
+
+## 9. Evaluation Criteria and Quality Control
+A high-quality response should:
+- [Criterion 1]
+- [Criterion 2]
+- [Criterion 3]
+
+Please self-evaluate your response based on these criteria and make adjustments if necessary. Consider:
+- Did the response fully address the objective?
+- Are there any areas that need clarification or expansion?
+- How can the response be improved in the next iteration?
+- Have you considered multiple perspectives on the issue?
+
+## 10. Error Handling and Edge Cases
+If you encounter any limitations or potential errors, please:
+- Clearly state the issue
+- Provide alternative approaches or workarounds if possible
+- Ask for clarification if needed
+
+Validation Criteria:
+1. [Criterion 1]
+2. [Criterion 2]
+3. [Criterion 3]
+
+## 11. Bias Awareness and Ethical Considerations
+Be aware of potential biases in your response. If you detect any:
+- Acknowledge the potential bias
+- Offer alternative perspectives or approaches to mitigate it
+Ensure outputs are [ethical considerations, e.g., respectful, inclusive]
+
+## 12. Follow-up and Iteration
+After your initial response, be prepared to:
+- Elaborate on specific points
+- Provide alternative approaches
+- Refine or adjust your response based on feedback
+
+## 13. Source Citation and Fact-Checking
+When stating facts or using specific information:
+- Cite sources when possible (but remember you don't have direct web access)
+- Indicate if any information is uncertain or could benefit from verification
+
+## 14. Tool Use and Function Calling
+If external tools or APIs are allowed, you may use the following:
+- [Tool/API 1]: [Description and usage instructions]
+- [Tool/API 2]: [Description and usage instructions]
+
+## 15. Self-Reflection and Evaluation
+- Evaluate your own responses critically
+- Consider the following quantitative metrics:
+  - Confidence score: [Provide a score from 0-100%]
+  - Relevance rating: [Rate the relevance of your response from 1-10]
+  - [Other relevant quantitative metrics]
+- Identify areas for improvement in your response
+
+## 16. Evaluation Criteria
+1. [Criterion 1]
+2. [Criterion 2]
+3. [Criterion 3]
+   ...
+
+## 17. Error Handling and Validation
+- If [condition], then [action]
+- For invalid inputs, [specified behavior]
+- Validation Criteria:
+  1. [Criterion 1]
+  2. [Criterion 2]
+  3. [Criterion 3]
+
+## 18. Prompt Chaining (for complex tasks)
+For complex tasks that require multiple steps or subtasks, follow this chaining structure:
+Step 1: [Subtask 1]
+Step 2: [Subtask 2]
+...
+Ensure that the output of each step feeds into the next step coherently.
+
+## 19. Feedback and Iteration
+- Areas to focus on: [List specific aspects]
+- Refinement instructions: [How to incorporate feedback]
+- Iteration process: [Steps for improving the output]
+- Follow-up questions to consider:
+  1. Did the response fully address the objective?
+  2. Are there any areas that need clarification or expansion?
+  3. How can the prompt be adjusted to improve the response in the next iteration?
+
+## 20. API Parameters and Control
+- Temperature: [Recommended setting and explanation]
+- Maximum Length: [Recommended setting and explanation]
+- Stop Sequences: [Recommended setting and explanation]
+- Top P: [Recommended setting and explanation]
+- Frequency Penalty: [Recommended setting and explanation]
+- Presence Penalty: [Recommended setting and explanation]
+- Control Parameters:
+  - Creativity level: [low, medium, high]
+  - [Other relevant control parameters]
+
+## 21. Model-Specific Considerations
+- Target Model: [Name of the AI model]
+- Model-Specific Instructions:
+  - [Instruction 1]
+  - [Instruction 2]
+  - [Known limitations or quirks of the model]
+
+## 22. Version Control and Documentation
+- Prompt Version: [Specify version number]
+- Last Updated: [Date]
+- Change Log: [Brief description of changes from previous versions]
+
+## 23. Prompt Optimization and Management
+- Techniques for refining prompts:
+  - A/B testing different prompt structures
+  - Gradual refinement based on model outputs
+  - Prompt compression: Identify and remove unnecessary elements without losing effectiveness
+- Prompt library management:
+  - Categorize prompts by task type, model, and performance metrics
+  - Regularly update and prune the library based on effectiveness
+
+## 24. Multi-modal and Cross-language Considerations
+- For multi-modal inputs: [Provide instructions for handling different input types]
+- For cross-language tasks:
+  - Consider cultural context and provide necessary background
+  - Specify any language-specific instructions or considerations
+  - Address potential translation or localization issues
+
+## 25. Human-AI Collaboration
+- [Provide instructions for effective collaboration between the AI and human users]
+- [Specify how human feedback should be incorporated]
+
+## 26. Template Usage Instructions
+1. Fill in the sections with specific details for your use case
+2. Replace placeholder text with actual content and requirements
+3. Adjust the structure and sections as needed for your specific task
+4. Review and refine the prompt to ensure clarity and effectiveness
+5. Test the prompt with different inputs and iterate as necessary
+6. Use clear separators between sections for better readability
+7. Consider using prompt compression techniques to remove unnecessary elements without losing effectiveness
+
+---
+
+Based on the above instructions and context, please proceed with the specified task. If you need any clarification or additional information, please ask before proceeding. Use clear and precise language throughout your response, and remember to state explicitly if you are unsure about any information.
