@@ -238,6 +238,10 @@ If you run into issues you can get community help by posting in at discuss.pytor
 
 This post is authored by Raghuraman Krishnamoorthi, James Reed, Min Ni, Chris Gottbrath and Seth Weidman. Special thanks to Jianyu Huang, Lingyi Liu and Haixin Liu for producing quantization metrics included in this post.
 
+## [Quantization Recipe](https://pytorch.org/tutorials/recipes/quantization.html)
+
+## [Accelerate PyTorch Models Using Quantization Techniques with Intel Extension for PyTorch](https://pytorch.org/blog/accelerate-pytorch-models/)
+
 ## [API-Quantization](https://pytorch.org/docs/stable/quantization.html#torch.quantization.quantize_dynamic)
 
 ### Warning
@@ -2932,6 +2936,8 @@ In this tutorial, we showed two quantization methods - post-training static quan
 
 Thanks for reading! As always, we welcome any feedback, so please create an issue [here](https://github.com/pytorch/pytorch/issues) if you have any.
 
+## [Quantization in PyTorch 2.0 Export Tutorial](https://pytorch.org/tutorials/prototype/quantization_in_pytorch_2_0_export_tutorial.html)
+
 ## [PyTorch 2 Export Post Training Quantization](https://pytorch.org/tutorials/prototype/pt2e_quant_ptq.html)
 
 This tutorial introduces the steps to do post training static quantization in graph mode based on torch._export.export. Compared to FX Graph Mode Quantization, this flow is expected to have significantly higher model coverage (88% on 14K models), better programmability, and a simplified UX.
@@ -3197,6 +3203,8 @@ The model produced at this point is not the final model that runs on the device,
 
 In this tutorial, we went through the overall quantization flow in PyTorch 2 Export Quantization using XNNPACKQuantizer and got a quantized model that could be further lowered to a backend that supports inference with XNNPACK backend. To use this for your own backend, please first follow the tutorial and implement a Quantizer for your backend, and then quantize the model with that Quantizer.
 
+## [PyTorch 2.0 Export Post Training Static Quantization](https://pytorch.org/tutorials/prototype/pt2e_quant_ptq_static.html)
+
 ## [PyTorch 2 Export Quantization-Aware Training (QAT)](https://pytorch.org/tutorials/prototype/pt2e_quant_qat.html)
 
 This tutorial shows how to perform quantization-aware training (QAT) in graph mode based on `torch.export.export`. For more details about PyTorch 2 Export Quantization in general, refer to the post training quantization tutorial.
@@ -3384,3 +3392,4 @@ In this tutorial, we demonstrated how to run Quantization-Aware Training (QAT) f
 
 ## [How to Write a Quantizer for PyTorch 2 Export Quantization](https://pytorch.org/tutorials/prototype/pt2e_quantizer.html)
 
+## [Quantization-Aware Training for Large Language Models with PyTorch](https://pytorch.org/blog/quantization-aware-training/)
